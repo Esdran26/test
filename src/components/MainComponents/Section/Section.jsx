@@ -18,7 +18,7 @@ const Section = () => {
       <Banner
         title={"Hola, Andres! Tienes idea sobre un nuevo libro?"}
         img={Books}
-        numero={1}
+        color={`#E9A763`}
       >
         <div className="flex flex-col gap-2">
           <div className="text-md">
@@ -46,11 +46,11 @@ const Section = () => {
       <div className="mb-4 ">
         <Banner
           img={Niños}
-          numero={2}
+          color={`#343A3F`}
           title={
             "Andrés, nos gusta tu contenido y queremos darte los siguientes tips:"
           }
-          text={"Hola"}
+          
         >
           <ul>
             {tips.map((tip, index) => (

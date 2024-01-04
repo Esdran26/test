@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
 
 
-const Banner = ({ numero ,title,children, img}) => {
-    const bgColor1 = '#E9A763';
-    const bgColor2 = '#343A3F';
+const Banner = ({ color ,title,children, img}) => {
     return (
         <>
-            <div className={`bg-[${ numero === 1 ? bgColor1 : bgColor2}] text-white flex justify-between rounded-3xl font-medium  md:w-full w-full md:ml-2 `}>
+            <div className={`bg-[${color}] text-white flex justify-between rounded-3xl font-medium  md:w-full w-full md:ml-2 `}>
                 <div className="px-14 pt-5  text-white-50 w-2/3 flex flex-col justify-between">
                     <h1 className="text-2xl leading-tight font-normal">
                     {title} 
@@ -30,7 +28,7 @@ const Banner = ({ numero ,title,children, img}) => {
 Banner.propTypes = {
     title: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
-    numero: PropTypes.number,
+    color: PropTypes.string,
     img: PropTypes.string.isRequired
 }
 export default Banner;

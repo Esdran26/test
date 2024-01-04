@@ -12,9 +12,8 @@ const AutorInformation = ({title, url }) => {
           try {
               const response = await fetch(url);
               const data = await response.json();
-              const firstThreeCharacters = data.results.slice(0, 3);
-
-             setDates(firstThreeCharacters);
+              
+            setDates(data);
           } catch (error) {
               throw error;
           }

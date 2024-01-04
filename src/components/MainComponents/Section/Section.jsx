@@ -5,7 +5,7 @@ import BloqueCards from "../Cards/Cards";
 import Recient from "../Recient/Recient";
 import Autores from "../Autores/Autores";
 
-const urlApi = "https://rickandmortyapi.com/api/character";
+const urlApi = "https://rickandmortyapi.com/api/character/1,2,3";
 const tips = [
   "Lee los comentarios de tus lectores",
   "Elige el género que quieres para tu público",

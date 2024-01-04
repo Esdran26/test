@@ -18,7 +18,7 @@ const Section = () => {
       <Banner
         title={"Hola, Andres! Tienes idea sobre un nuevo libro?"}
         img={Books}
-        color={"#E9A763"}
+        numero={1}
       >
         <div className="flex flex-col gap-2">
           <div className="text-md">
@@ -46,7 +46,7 @@ const Section = () => {
       <div className="mb-4 ">
         <Banner
           img={Niños}
-          color={"#343A3F"}
+          numero={2}
           title={
             "Andrés, nos gusta tu contenido y queremos darte los siguientes tips:"
           }

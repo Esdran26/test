@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Banner = ({ color ,title,children, img}) => {
     return (
         <>
-            <div className={`bg-[${color}] text-white flex justify-between rounded-3xl font-medium  md:w-full w-full md:ml-2 `}>
+            <div className={`bg-[${color ?? '#E9A763'}] text-white flex justify-between rounded-3xl font-medium  md:w-full w-full md:ml-2 `}>
                 <div className="px-14 pt-5  text-white-50 w-2/3 flex flex-col justify-between">
                     <h1 className="text-2xl leading-tight font-normal">
                     {title} 

@@ -24,8 +24,8 @@ const AutorInformation = ({title }) => {
   }, [])
   
     return (
-      <div>
-      <div className="  p-4 flex flex-col  bg-[#F2F2F2] m-2 rounded-lg shadow-md">
+      <div className="md:m-2 w-full  ml-7 mt-2">
+      <div className="  p-4 flex flex-col  bg-[#F2F2F2] rounded-lg shadow-md">
       <div className="flex justify-between">
       <h1 className="font-medium text-2xl">{title}</h1>
       <button className="bg-[#E6EDE5] text-[#7DA870] px-2 rounded-md">Ver Todo</button>

@@ -34,7 +34,7 @@ const Section = () => {
       </Banner>
 
       <div className="  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 mb-3">
-        <div className="col-span-2">
+        <div className=" col-span-2">
           <BloqueCards></BloqueCards>
           <Autores url={urlApi}></Autores>
         </div>

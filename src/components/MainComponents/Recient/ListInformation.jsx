@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const ListInformation = ({title, users, children }) => {
     return (
-      <div className="ml-5 w-full md:ml-2">
+      <div className="w-full md:ml-2">
       <div className="p-4 flex flex-col  bg-[#F2F2F2] m-2 rounded-md shadow-md">
       <div className="flex justify-between">
       <h1 className="font-medium text-2xl">{title}</h1>

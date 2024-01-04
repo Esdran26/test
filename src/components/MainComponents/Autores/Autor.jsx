@@ -24,7 +24,7 @@ const AutorInformation = ({title, url }) => {
   }, [])
   
     return (
-      <div className="md:m-2 w-full  ml-5 mt-2">
+      <div className="md:m-2 w-full mt-2">
       <div className="  p-4 flex flex-col  bg-[#F2F2F2] rounded-lg shadow-md">
       <div className="flex justify-between">
       <h1 className="font-medium text-2xl">{title}</h1>

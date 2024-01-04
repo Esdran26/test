@@ -14,7 +14,7 @@ const tips = [
 
 const Section = () => {
   return (
-    <div className="w-full sm:w-4/5 md:flex md:flex-col">
+    <div className="w-full sm:w-4/5 md:flex md:flex-col p-2">
       <Banner
         title={"Hola, Andres! Tienes idea sobre un nuevo libro?"}
         img={Books}

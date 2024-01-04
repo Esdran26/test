@@ -1,4 +1,6 @@
-// eslint-disable-next-line react/prop-types
+import PropTypes from 'prop-types';
+
+
 const Banner = ({ color ,title,children, img}) => {
     return (
         <>
@@ -23,10 +25,10 @@ const Banner = ({ color ,title,children, img}) => {
     )
 };
 
-
-
-
-
-// esto de debe poner en el App, 
-
+Banner.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+    color: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired
+}
 export default Banner;

@@ -6,7 +6,7 @@ const Profile = ({ name }) => {
     <div className='flex gap-3 items-center'>
       <span>{name}</span>
       <div className='w-[40px]'>
-        <img className='rounded-md' src={imgProfile} alt='Profile' />
+        <img className='cursor-pointer rounded-md' src={imgProfile} alt='Profile' />
       </div>
     </div>
   );

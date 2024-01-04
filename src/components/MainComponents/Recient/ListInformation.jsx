@@ -1,4 +1,6 @@
-// eslint-disable-next-line react/prop-types
+
+import PropTypes from 'prop-types';
+
 const ListInformation = ({title, users, children }) => {
     return (
       <div className="ml-7 w-full md:ml-2">
@@ -28,4 +30,10 @@ const ListInformation = ({title, users, children }) => {
     );
   };
   
+  ListInformation.propTypes = {
+    title: PropTypes.string.isRequired,
+    users: PropTypes.arrayOf(PropTypes.shape).isRequired,
+    children: PropTypes.node.isRequired,
+  }
+
   export default ListInformation;

@@ -1,4 +1,5 @@
-// eslint-disable-next-line react/prop-types
+import PropTypes from 'prop-types';
+
 const TheLastComponent = ({ title, children }) => {
     return (
         <div className="p-4 flex flex-col bg-[#F2F2F2] m-2 rounded-lg">
@@ -11,4 +12,8 @@ const TheLastComponent = ({ title, children }) => {
     );
 }
 
+TheLastComponent.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired
+}
 export default TheLastComponent;

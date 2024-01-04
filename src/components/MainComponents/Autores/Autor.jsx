@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from 'prop-types'
 
 
-const AutorInformation = ({title }) => {
+const AutorInformation = ({title, url }) => {
 
   const [dates, setDates] = useState(null);
 
@@ -10,7 +10,7 @@ const AutorInformation = ({title }) => {
       const fetchUsers = async () => {
           // eslint-disable-next-line no-useless-catch
           try {
-              const response = await fetch("https://rickandmortyapi.com/api/character");
+              const response = await fetch(url);
               const data = await response.json();
               const firstThreeCharacters = data.results.slice(0, 3);
 
@@ -32,7 +32,6 @@ const AutorInformation = ({title }) => {
       </div>
         {
             
-            // eslint-disable-next-line react/prop-types
             dates ? dates.map((user, index) => (
           
             <div key={index} className=" grid mt-2 py-2 px-2 grid-cols-3 ">
@@ -55,13 +54,14 @@ const AutorInformation = ({title }) => {
             </div>
 
                       
-        )): <div>Cragando</div>}
+        )): <div>Cargando datos...</div>}
         </div>
       </div>
     );
   };
   AutorInformation.propTypes = {
     title: PropTypes.string,
+    url: PropTypes.string
   }
 
   export default AutorInformation;

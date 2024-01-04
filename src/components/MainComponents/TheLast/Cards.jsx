@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 
 const Cards = ({ users }) => {
     return (
@@ -31,4 +31,7 @@ const Cards = ({ users }) => {
     );
 };
 
+Cards.propTypes = {
+    users: PropTypes.arrayOf(PropTypes.shape).isRequired
+}
 export default Cards;

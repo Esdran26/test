@@ -1,11 +1,11 @@
 import AutorInformation from './Autor';
 
 // eslint-disable-next-line react/prop-types
-const Autores = () => {
+const Autores = ({url}) => {
 
     return (
         <div>
-      <AutorInformation title={'Autores'}></AutorInformation>
+      <AutorInformation url={url} title={'Autores'}></AutorInformation>
             
         </div>
     );

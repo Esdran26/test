@@ -1,14 +1,19 @@
-import imgProfile from '../../../assets/profile.jpg'
-// eslint-disable-next-line react/prop-types
-const Profile = ({name}) => {
-    return (
-        <div className='flex gap-3 items-center'>
-            <span>{name}</span>
-            <div className='w-[40px]'>
-                <img className='rounded-md' src={imgProfile} />
-            </div>
-        </div>
-    );
-}
+import PropTypes from 'prop-types';
+import imgProfile from '../../../assets/profile.jpg';
+
+const Profile = ({ name }) => {
+  return (
+    <div className='flex gap-3 items-center'>
+      <span>{name}</span>
+      <div className='w-[40px]'>
+        <img className='rounded-md' src={imgProfile} alt='Profile' />
+      </div>
+    </div>
+  );
+};
+
+Profile.propTypes = {
+  name: PropTypes.string.isRequired,
+};
 
 export default Profile;

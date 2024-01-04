@@ -1,9 +1,7 @@
-// eslint-disable-next-line react/prop-types
-
 import { useState, useEffect } from "react";
+import PropTypes from 'prop-types'
 
 
-// eslint-disable-next-line react/prop-types
 const AutorInformation = ({title }) => {
 
   const [dates, setDates] = useState(null);
@@ -27,7 +25,7 @@ const AutorInformation = ({title }) => {
   
     return (
       <div>
-      <div className="p-4 flex flex-col  bg-[#F2F2F2] m-2 rounded-lg shadow-md">
+      <div className="  p-4 flex flex-col  bg-[#F2F2F2] m-2 rounded-lg shadow-md">
       <div className="flex justify-between">
       <h1 className="font-medium text-2xl">{title}</h1>
       <button className="bg-[#E6EDE5] text-[#7DA870] px-2 rounded-md">Ver Todo</button>
@@ -43,7 +41,7 @@ const AutorInformation = ({title }) => {
 
                 <div className="col-span-1">
               <span className="font-medium">{user.name}</span>
-              <p className="text-gray-600"> {}</p>
+              <p className="text-gray-600"> {user.species}</p>
              
               <hr className="mt-2"></hr>
               
@@ -62,5 +60,8 @@ const AutorInformation = ({title }) => {
       </div>
     );
   };
-  
+  AutorInformation.propTypes = {
+    title: PropTypes.string,
+  }
+
   export default AutorInformation;

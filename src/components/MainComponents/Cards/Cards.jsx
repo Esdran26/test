@@ -1,11 +1,14 @@
-const estadisticas = {
+import PropTypes from 'prop-types'
+
+
+const datos = {
     "Libreria": "124",
     "Me gusta": "155k",
     "Lectores": "8k",
     "Opiniones": "163 k"
 };
 
-// eslint-disable-next-line react/prop-types
+
 const Cards = ({ data }) => {
     return (
         <>
@@ -26,13 +29,14 @@ const BloqueCards = () => {
     return (
         <>
             <div className="flex gap-5">
-                <Cards data={estadisticas}></Cards>
+                <Cards data={datos}></Cards>
             </div>
         </>
     )
 };
 
-
-
+Cards.propTypes = {
+    data: PropTypes.objectOf(PropTypes.string).isRequired,
+}
 
 export default BloqueCards;

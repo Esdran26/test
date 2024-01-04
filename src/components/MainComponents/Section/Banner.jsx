@@ -2,7 +2,7 @@
 const Banner = ({ color ,title,children, img}) => {
     return (
         <>
-            <div className={`bg-[${color}] text-white flex justify-between rounded-3xl font-medium ml-2 `}>
+            <div className={`bg-[${color}] text-white flex justify-between rounded-3xl font-medium ml-2 md:w-full w-full `}>
                 <div className="px-14 pt-5  text-white-50 w-2/3 flex flex-col justify-between">
                     <h1 className="text-2xl leading-tight font-normal">
                     {title} 
@@ -12,7 +12,7 @@ const Banner = ({ color ,title,children, img}) => {
                     </div>
 
                 </div>
-                <div className="w-1/3 h-150">
+                <div className="w-1/3 h-130">
                     <img
                         className="object-contain mt-6"
                         src={img}

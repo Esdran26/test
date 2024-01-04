@@ -28,7 +28,7 @@ const Cards = ({ data }) => {
 const BloqueCards = () => {
     return (
         <>
-            <div className="flex gap-1 md:gap-5">
+            <div className="ml-5 md:flex gap-1 md:gap-5 grid grid-cols-2">
                 <Cards data={datos}></Cards>
             </div>
         </>
